@@ -1,0 +1,82 @@
+// === @import === //
+    @import "../util/variable";
+    @import "../util/mixin";
+    @import "../util/fonction";
+// === end: @import === //
+
+
+
+// === header === //
+    header
+    {
+        width: min(100%, #{$website-width-max});
+
+        padding: $padding-medium $padding-large;
+        margin-bottom: $margin-large;
+        margin-left: $margin-large;
+        margin-right: $margin-large;
+
+        border-radius: $border-radius-medium;
+
+        background-color: $background-color-2;
+
+
+
+        #navigation-main
+        {
+            > ul
+            {
+                font-size: 1.25rem;
+                font-weight: bold;
+
+                list-style: none;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: $margin-medium;
+
+
+
+                > #website-emblem
+                {
+                    img{ width: $website-emblem-width; }
+
+                    span{ margin-left: $margin-small; }
+                }
+
+                a
+                {
+                    text-decoration: none;
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+
+
+                    > div
+                    {
+                        padding: $padding-small;
+                        margin-left: $margin-small;
+
+                        position: relative;
+
+
+
+                        #cart-item-number
+                        {
+                            color: $text-color-2;
+                            text-align: center;
+
+                            position: absolute;
+                            left: 5px;
+                            right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+// === end: header === //

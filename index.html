@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+
+
+<html lang = "fr-FR">
+	<head>
+		<meta charset = "UTF-8">
+
+		<meta name = "author" content = "Jean-Christophe Holzer">
+		<meta name = "description" content = "Oricamera - Site spécialisé de vente en ligne d'appareil photos.">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+		<title>Oricamera - nos produits</title>
+		<link rel = "icon" type = "image/png" href = "data/picture/emblem/oricamera.svg">
+		
+		<link rel = "stylesheet" type = "text/css" href = "source_code/style/css/base/main.css">
+		<link rel = "stylesheet" type = "text/css" href = "source_code/style/css/module/header.css">
+		<link rel = "stylesheet" type = "text/css" href = "source_code/style/css/module/footer.css">
+		<link rel = "stylesheet" type = "text/css" href = "source_code/style/css/page/index.css">
+	</head>
+
+	<body>
+		<header>
+			<!-- === navigation === -->
+				<nav id = "navigation-main">
+					<ul>
+						<li id = "website-emblem">
+							<a href = "orinoco.html">
+								<img src = "data/picture/emblem/oricamera.svg" alt = "Emblème d'Orinoco">
+								<span>Oricamera</span>
+							</a>
+						</li>
+						<li id = "cart">
+							<a href = "cart.html">
+								<span>Panier</span>
+								<div>
+									<img class = "pictogram-large" src = "data/picture/pictogram/cart.svg" alt = "Pictogramme de panier">
+									<span id = "cart-item-number">0</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			<!-- === end: navigation === -->
+		</header>
+
+		<main>
+			<!-- === item area === -->
+				<div id = "item_area">
+					<!-- === search bar === -->
+						<form id = "search_bar" methode = "post" action = "#">
+							<input type = "search" name = "search_bar" maxlength = "32" placeholder = "Zurss 50S">
+							<button type = "submit" name = "submite">
+								<img class = "pictogram-large" src = "data/picture/pictogram/search-solid.svg" alt = "Pictogramme de loupe">
+							</button>
+						</form>
+					<!-- === end: search bar === -->
+
+					<!-- === filter and sort === -->
+						<div id = "filter-sort">
+							<!-- === filter === -->
+								<div id = "filter">
+									<p>Filtre</p>
+
+									<ul id = "filter-list">
+										<li> <!-- === new === -->
+											<input id = "filter-new" type = "checkbox">
+											<label for = "filter-new">
+												<span>Nouveauté</span>
+											</label>
+										</li>
+										<li> <!-- === promotion === -->
+											<input id = "filter-promotion" type = "checkbox">
+											<label for = "filter-promotion">
+												<span>Promotion</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							<!-- === end: filter === -->
+
+							<!-- === sort === -->
+								<div id = "sort">
+									<p>Trier par</p>
+
+									<select id = "sort-list">
+										<option value = "sort-price-ascending">Prix croissant</option>
+										<option value = "sort-price-descending">Prix décroissant</option>
+									</select>
+								</div>
+							<!-- === end: sort === -->
+						</div>
+					<!-- === end: filter and sort === -->
+
+					<!-- === card area === -->
+						<section id = "card_area">
+							<h1>Nos produits</h1>
+							<hr/>
+
+							<div id = "card_area-list">
+							</div>
+						</section>
+					<!-- === card area === -->
+				</div>
+			<!-- === end: item area === -->
+		</main>
+
+		<footer>
+			<a href = "mailto:#">Nous contacter</a>
+		</footer>
+	</body>
+</html>

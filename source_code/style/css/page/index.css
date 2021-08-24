@@ -1,0 +1,142 @@
+#item_area {
+  width: min(100%, 1510px);
+  height: 100%;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  background-color: #F3E9F1;
+}
+#item_area #search_bar {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#item_area #search_bar input[type=search] {
+  width: calc(100% - 36px);
+  padding: 0px 1em;
+  border-radius: 16px 0px 0px 16px;
+  border-top: 2px solid #8F5BFE;
+  border-right: none;
+  border-bottom: 2px solid #8F5BFE;
+  border-left: 2px solid #8F5BFE;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#item_area #search_bar input[type=search]::placeholder {
+  opacity: 1;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #575757;
+}
+#item_area #search_bar button {
+  padding: 5px;
+  border-radius: 0px 16px 16px 0px;
+  background-color: #8F5BFE;
+  border-top: 2px solid #8F5BFE;
+  border-right: none;
+  border-bottom: 2px solid #8F5BFE;
+  border-left: 2px solid #8F5BFE;
+  display: flex;
+  cursor: pointer;
+}
+#item_area #filter-sort {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+#item_area #filter-sort #filter {
+  display: flex;
+  flex-direction: row;
+}
+#item_area #filter-sort #filter p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+#item_area #filter-sort #filter #filter-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+#item_area #filter-sort #filter #filter-list li {
+  margin-left: 10px;
+}
+#item_area #filter-sort #sort {
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#item_area #filter-sort #sort #sort-list {
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 16px;
+  border: 2px solid #8F5BFE;
+}
+#item_area #card_area {
+  display: flex;
+  flex-direction: column;
+}
+#item_area #card_area hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #8F5BFE;
+}
+#item_area #card_area #card_area-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+#item_area #card_area #card_area-list .card {
+  max-width: 360px;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  border: 2px solid #8F5BFE;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#item_area #card_area #card_area-list .card .card-info {
+  display: flex;
+  flex-direction: column;
+}
+#item_area #card_area #card_area-list .card .card-info .card-title {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#item_area #card_area #card_area-list .card .card-info .card-illustration {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid #261624;
+}
+#item_area #card_area #card_area-list .card .card-info .card-description {
+  margin-bottom: 10px;
+}
+#item_area #card_area #card_area-list .card .card-info .card-price {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#item_area #card_area #card_area-list .card .card-cart-add {
+  padding: 5px 20px;
+  border-radius: 16px;
+  background-color: #E68B08;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=index.css.map */
